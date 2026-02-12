@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build artifacts
+build/
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.user
+
+# Dependencies
+/dependencies/
+/extern/
+
+# Output
+*.log
+*.exp
+*.lib
