@@ -1,4 +1,5 @@
 #include <gtest/gtest.h>
+#include <gmock/gmock.h>
 #include "Dog.h"
 #include "Cat.h"
 #include "Bird.h"
