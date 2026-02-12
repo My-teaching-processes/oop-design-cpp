@@ -41,6 +41,33 @@ std::shared_ptr<Animal> Zoo::findAnimalByName(const std::string& name) {
     return nullptr;
 }
 
+std::vector<std::string> Zoo::getAllSounds() const {
+    std::vector<std::string> sounds;
+    for (const auto& animal : animals) {
+        sounds.push_back(animal->makeSound());
+    }
+    return sounds;
+}
+
+void Zoo::feedAll() {
+    return;
+}
+
+void Zoo::exerciseAll(int minutes) {
+    std::cout << "\n--- Время тренировки в " << name << " (" << minutes << " минут) ---" << std::endl;
+    for (auto& animal : animals) {
+        animal->exercise(minutes);
+    }
+}
+
+size_t Zoo::getAnimalCount() const {
+    return 0;
+}
+
+size_t Zoo::getSpeciesCount(const std::string& species) const {
+    return 0;
+}
+
 void Zoo::displayAnimals() const {
     if (animals.empty()) {
         std::cout << "Зоопарк " << name << " еще не имеет животных." << std::endl;
